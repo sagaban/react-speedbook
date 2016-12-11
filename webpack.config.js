@@ -19,7 +19,7 @@ const BUILD = path.join(__dirname, 'build');
 const STYLE = path.join(__dirname, 'app/style.css');
 const PUBLIC = path.join(__dirname, 'app/public');
 const TEMPLATE = path.join(__dirname, 'app/templates/index.html');
-// const NODE_MODULES = path.join(__dirname, 'node_modules');
+const NODE_MODULES = path.join(__dirname, 'node_modules');
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 
@@ -48,12 +48,12 @@ module.exports = {
       {
         test: /\.css$/,
         loaders: ['style', 'css', 'postcss'],
-        include: APP
+        include: [APP, NODE_MODULES]
       },
       {
         test: /\.json$/,
         loader: 'json',
-        include: APP
+        include: [APP, NODE_MODULES]
       }
     ]
   },
@@ -73,7 +73,6 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     hot: true,
-    inline: true,
     progress: true,
 
     stats: 'errors-only',

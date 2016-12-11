@@ -34,3 +34,9 @@ There are different tags in master branch, that correspond (some how) with each 
 
 ### Chapter01
 Here just add the basic structure to work with Webpack, Babel, React, ESLint, PostCSS and other technologies.
+
+### Chapter02
+Here we started using React. We added two React components, one of them stateless. We define the concepts `State`, `Props`, and `Events` and use them in the components.
+
+### Chapter03
+Production Optimize Webpack: Optimizing React code, separating CSS for static or CDN serving, bundling dependencies separately, minifying JavaScript code, and others.
