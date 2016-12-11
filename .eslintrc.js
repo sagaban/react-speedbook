@@ -44,6 +44,6 @@ module.exports = {
     "consistent-return": "error",
     // Added by me
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    'jsx-a11y/no-static-element-interactions': 1,
   }
 };
