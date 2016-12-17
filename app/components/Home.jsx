@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import GitHub from './GitHub';
+import IconText from './IconText';
 import World from './World';
 import YouTube from './YouTube';
-import IconText from './IconText';
 
 
 export default class Home extends Component {
@@ -50,6 +51,17 @@ export default class Home extends Component {
               Join 100s of readers learning
               latest React ES6 concepts.
             </p>
+          </Card>
+        </section>
+        <section className="stripe">
+          <Card className="col--quarter text--center back--default">
+            <GitHub repo="facebook/react" />
+          </Card>
+          <Card className="col--quarter text--center back--default">
+            <GitHub repo="emberjs/ember.js" />
+          </Card>
+          <Card className="col--quarter text--center back--default">
+            <GitHub repo="sagaban/react-speedbook" />
           </Card>
         </section>
         <section className="stripe">
