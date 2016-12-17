@@ -40,3 +40,6 @@ Here we started using React. We added two React components, one of them stateles
 
 ### Chapter03
 Production Optimize Webpack: Optimizing React code, separating CSS for static or CDN serving, bundling dependencies separately, minifying JavaScript code, and others.
+
+### Chapter04
+We started designing our very own ReactSpeed UI component library for your apps. We did so using Flexbox, PostCSS, and custom React components.

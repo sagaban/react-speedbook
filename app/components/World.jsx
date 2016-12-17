@@ -38,7 +38,7 @@ export default class World extends Component {
       ? `${this.state.value} says ${this.state.currentGreeting}`
       : this.state.currentGreeting;
     return (
-      <div className="World-card">
+      <div>
         <Hello greet={renderGreeting} message="World!" />
         <h2>
           <a onClick={this.slangGreet}>Slang</a>
