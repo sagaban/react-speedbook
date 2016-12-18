@@ -27,7 +27,7 @@ You will need the following things properly installed on your computer.
 Soon
 
 ### Building
-* `npm run build` will generate a `build` folder to be deployed in production
+* `npm run build` will generate a `build` folder to be deployed in production.
 
 ## Tags
 There are different tags in master branch, that correspond (some how) with each chapter in the book. I mostly follow the book, but some times I introduced changes.
@@ -45,4 +45,7 @@ Production Optimize Webpack: Optimizing React code, separating CSS for static or
 We started designing our very own ReactSpeed UI component library for our apps. We did so using Flexbox, PostCSS, and custom React components.
 
 ### Chapter05
-This stage is to speedily “prototype” new features and code within our React project. We will go over best practices to create performant, reusable, and maintainable code.
+This stage is to speedily “prototype” new features and code within our React project, adding components that wrap external functionalities. We will go over best practices to create performant, reusable, and maintainable code.
+
+### Chapter06
+This chapter does a deep dive into best practices for defining your React component internals. We created a "complex" component (WorkFlow) with all this practices. 

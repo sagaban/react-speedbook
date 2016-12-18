@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Card from './Card';
 import GitHub from './GitHub';
 import IconText from './IconText';
+import Workflow from './Workflow';
 import World from './World';
 import YouTube from './YouTube';
-
 
 export default class Home extends Component {
   render() {
@@ -51,6 +51,17 @@ export default class Home extends Component {
               Join 100s of readers learning
               latest React ES6 concepts.
             </p>
+          </Card>
+        </section>
+        <section className="stripe back--default">
+          <Card plain className="col--half text--center">
+            <h1>Custom Workflow Component</h1>
+            <p className="subtext">
+              Navigate React development strategies.
+            </p>
+          </Card>
+          <Card className="col--one-third back--secondary">
+            <Workflow />
           </Card>
         </section>
         <section className="stripe">

@@ -45,6 +45,7 @@ module.exports = {
     // Added by me
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     'jsx-a11y/no-static-element-interactions': 1,
-    "react/prefer-stateless-function": [1]
+    "react/prefer-stateless-function": [1],
+    "react/forbid-prop-types": [1]
   }
 };
