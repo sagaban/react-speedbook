@@ -48,4 +48,7 @@ We started designing our very own ReactSpeed UI component library for our apps. 
 This stage is to speedily “prototype” new features and code within our React project, adding components that wrap external functionalities. We will go over best practices to create performant, reusable, and maintainable code.
 
 ### Chapter06
-This chapter does a deep dive into best practices for defining your React component internals. We created a "complex" component (WorkFlow) with all this practices. 
+This chapter does a deep dive into best practices for defining your React component internals. We created a "complex" component (WorkFlow) with all this practices.
+
+### Chapter07
+Wiring multiple Components

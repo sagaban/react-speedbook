@@ -5,6 +5,8 @@ import IconText from './IconText';
 import Workflow from './Workflow';
 import World from './World';
 import YouTube from './YouTube';
+import ButtonDemo from './ButtonDemo';
+import Button from './Button';
 
 export default class Home extends Component {
   render() {
@@ -138,6 +140,30 @@ export default class Home extends Component {
           </Card>
           <Card className="col--one-third text--center back--white">
             <World />
+          </Card>
+        </section>
+        <section className="stripe back--default">
+          <Card className="col--one-third text--center back--white">
+            <p>Click does not do much...</p>
+            <Button label="Default" color="default" />
+            <Button label="Primary" color="primary" />
+            <Button label="Secondary" color="secondary" />
+            <Button label="Warning" color="warning" />
+            <Button label="Success" color="success" />
+            <Button label="Danger" color="danger" />
+          </Card>
+          <Card className="col--quarter text--center back--white">
+            <ButtonDemo
+              colors={['Primary', 'Success', 'Danger', 'Warning']}
+            />
+          </Card>
+          <Card className="text--center back--white">
+            <ButtonDemo
+              colors={['Secondary', 'Success', 'Danger', 'Warning']}
+              sizes={['large', 'medium', 'medium', 'small']}
+              icons={['coffee', 'cloud', 'flash', 'plug']}
+              iconOnly
+            />
           </Card>
         </section>
         <section className="stripe--slim back--gray">

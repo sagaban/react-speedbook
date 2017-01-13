@@ -1,5 +1,8 @@
 @import 'normalize.css';
+
 @import 'styles/base/variables';
+@import 'styles/base/mixins';
+
 @import 'styles/base/elements';
 @import 'styles/base/util';
 @import 'styles/base/theme';
@@ -8,3 +11,4 @@
 @import 'styles/base/image';
 @import 'styles/components/card';
 @import 'styles/components/workflow';
+@import 'styles/components/button';
