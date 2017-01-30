@@ -51,4 +51,4 @@ This stage is to speedily “prototype” new features and code within our React
 This chapter does a deep dive into best practices for defining your React component internals. We created a "complex" component (WorkFlow) with all this practices.
 
 ### Chapter07
-Wiring multiple Components
+Wiring multiple Components (parent-child). Presentational and container components. Integrating vendor components
