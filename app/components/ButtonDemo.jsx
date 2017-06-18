@@ -3,6 +3,8 @@ import Button from './Button';
 
 export default class ButtonDemo extends Component {
   static propTypes = {
+    // TODO Refactor PropTypes.array.isRequired
+    // eslint-disable-next-line
     colors: PropTypes.array.isRequired,
     icons: PropTypes.array, // eslint-disable-line
     sizes: PropTypes.array, // eslint-disable-line

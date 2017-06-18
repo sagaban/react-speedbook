@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 
 export default class Workflow extends React.Component {
+  // TODO refactor PropTypes.array
   static propTypes = {
     steps: PropTypes.array.isRequired
   }
@@ -74,6 +75,8 @@ export default class Workflow extends React.Component {
     const steps = this.props.steps;
     const currentStep = steps[this.state.stepsIndex];
     // I changed the code from book. It was very inefficient and hard to follow.
+    // The steps array is gone through to check the next scenario comparing the
+    // symbol value or set to 0
     let newIndex = 0;
     for (let i = this.state.stepsIndex; i < steps.length - 1; i += 1) {
       if (steps[i].symbol !== currentStep.symbol) {

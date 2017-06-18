@@ -98,8 +98,8 @@ export default class Home extends Component {
                   innerPadding={2}
                   pieAttributes={{
                     /* eslint-disable no-return-assign, no-param-reassign */
-                    onMouseMove: (e) => e.target.style.opacity = 1,
-                    onMouseLeave: (e) => e.target.style.opacity = 0.5
+                    onMouseMove: e => e.target.style.opacity = 1,
+                    onMouseLeave: e => e.target.style.opacity = 0.5
                     /* eslint-enable no-return-assign, no-param-reassign */
                   }}
                   pieStyle={{ opacity: 0.5 }}
@@ -116,7 +116,7 @@ export default class Home extends Component {
               series={this.state.series}
               minY={0}
             >
-              <Animate _ease="bounce" _ease="elastic">
+              <Animate _ease="elastic">
                 <Layer width="80%" height="80%" position="middle center">
                   <Ticks
                     axis="y"

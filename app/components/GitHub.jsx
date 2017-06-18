@@ -25,7 +25,9 @@ export default class GitHub extends React.Component {
         stargazers_count: result.stargazers_count,
         open_issues: result.open_issues
       });
-    }).bind(this);
+      // TODO Check why 'bind(this)' doesn't work
+    // }).bind(this);
+    });
   }
 
   componentWillUnmount() {

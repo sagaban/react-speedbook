@@ -29,7 +29,8 @@ Button.propTypes = {
   label: React.PropTypes.string,
   icon: React.PropTypes.string,
   size: React.PropTypes.string,
-  color: React.PropTypes.string
+  color: React.PropTypes.string,
+  className: React.PropTypes.string
 };
 
 export default Button;

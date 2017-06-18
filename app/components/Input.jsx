@@ -12,7 +12,8 @@ const Input = props => (
 );
 
 Input.propTypes = {
-  children: React.PropTypes.node
+  children: React.PropTypes.node,
+  className: React.PropTypes.string
 };
 
 export default Input;
