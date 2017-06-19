@@ -11,10 +11,15 @@ function MissingRoute() {
         </p>
       </Card>
       <Card plain className="text--center">
-        <a href="https://leanpub.com/reactspeedcoding"
-          className="image__link">
-          <img width="200"
-            src="img/reactspeed-cover-leanpub.jpg" />
+        <a
+          href="https://leanpub.com/reactspeedcoding"
+          className="image__link"
+        >
+          <img
+            width="200"
+            src="img/reactspeed-cover-leanpub.jpg"
+            alt="cover"
+          />
         </a>
       </Card>
     </section>
