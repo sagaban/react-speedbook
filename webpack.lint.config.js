@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 // Lint and sync
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // File ops
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -27,6 +28,7 @@ const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const PROXY = `http://${HOST}:${PORT}`;
 const LINT = path.join(__dirname, '.eslintrc.js');
+const STYLELINT = ['./app/styles/**/*.css', './app/styles.css'];
 
 module.exports = {
   // Paths and extensions
@@ -103,6 +105,10 @@ module.exports = {
   },
   // Webpack plugins
   plugins: [
+    new StyleLintPlugin({
+      files: STYLELINT,
+      syntax: 'scss'
+    }),
     new BrowserSyncPlugin(
       {
         host: HOST,

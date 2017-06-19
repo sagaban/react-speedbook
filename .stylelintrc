@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-standard"
+  # Example about how to add rules:
+  # # "rules": {
+  # #   "number-leading-zero": null
+  # # }
+}
