@@ -1,21 +1,21 @@
 module.exports = {
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
   "parser": "babel-eslint",
-  "rules": {
-    "strict": 0
+  "parserOptions": {
+    "sourceType": "module"
   },
   "env": {
     "browser": true,
     "es6": true,
     "jquery": true
   },
-  "extends": "airbnb",
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react"
-  ],
   "rules": {
+    "strict": 0,
     "no-console": "warn",
     "comma-dangle": [
       "warn",

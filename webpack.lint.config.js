@@ -26,6 +26,7 @@ const NODE_MODULES = path.join(__dirname, 'node_modules');
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const PROXY = `http://${HOST}:${PORT}`;
+const LINT = path.join(__dirname, '.eslintrc.js');
 
 module.exports = {
   // Paths and extensions
@@ -41,8 +42,19 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
+  eslint: {
+    configFile: LINT,
+    emitError: true
+  },
   // Loaders for processing different file types
   module: {
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['eslint'],
+        include: APP
+      }
+    ],
     loaders: [
       {
         test: /\.jsx?$/,
