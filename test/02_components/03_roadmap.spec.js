@@ -1,3 +1,54 @@
+import React from 'react';
+import { describe, it } from 'mocha';
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
+import Roadmap from '../../app/components/Roadmap';
+
+
+describe('<Roadmap />', () => {
+  it('should create one .roadmap component', () => {
+    const wrapper = shallow(<Roadmap />);
+    expect(wrapper.is('.roadmap')).to.equal(true);
+  });
+
+
+  describe('roadmap__navigation', () => {
+    it('should create one .roadmap__navigation component');
+
+    describe('roadmap__search', () => {
+      it('should create one .roadmap__search component');
+      it('should initialize default value for searchText');
+      it('should execute enterSearch() when user presses Enter in search box');
+      it('should update state tree after enterSearch() is called');
+    });
+
+    describe('roadmap__category', () => {
+      it('should create N .roadmap__category components');
+      it('should execute selectFilter() when user selects a filter');
+      it('should update state tree after selectFilter() is called');
+    });
+  });
+
+  describe('feature__list', () => {
+    it('should create one .feature__list component');
+
+    describe('feature', () => {
+      it('should create N .feature components');
+
+      describe('feature__likes', () => {
+        it('should create one .feature__likes component per .feature');
+      });
+
+      describe('feature__detail', () => {
+        it('should create one .feature__detail component per .feature');
+      });
+
+      describe('feature__category', () => {
+        it('should create one .feature__category component per .feature');
+      });
+    });
+  });
+});
 /*
 import React from 'react';
 import { describe, it } from 'mocha';
