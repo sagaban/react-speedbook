@@ -1,12 +1,17 @@
 import React from 'react';
 
 import Card from './Card';
-import IconText from './IconText';
 import Button from './Button';
 import Input from './Input';
 import InputLabel from './InputLabel';
 import InputField from './InputField';
+import FeatureList from './FeatureList';
+import features from '../fixtures/roadmap/features';
 
+const likesClick = (id) => {
+  // to be implemented
+  console.log(`likesClick id = ${id}`);
+};
 const Roadmap = () => (
   <div className="roadmap">
     <Card plain>
@@ -34,55 +39,10 @@ const Roadmap = () => (
         />
       </Card>
     </div>
-    <div className="feature__list">
-      <div className="feature">
-        <Card plain>
-          <IconText
-            className="success feature__likes"
-            icon="heart"
-            size="2x"
-            text="21 likes"
-            ribbon
-          />
-        </Card>
-        <Card plain className="col--half">
-          <div className="feature__detail">
-            <b>Feature title here!</b><br />
-            Details spilling to next line here.
-          </div>
-        </Card>
-        <Card plain>
-          <IconText
-            icon="book"
-            size="2x" className="secondary feature__category"
-          />
-        </Card>
-      </div>
-
-      <div className="feature">
-        <Card plain>
-          <IconText
-            className="warning feature__likes"
-            icon="heart"
-            size="2x"
-            text="1 like"
-            ribbon
-          />
-        </Card>
-        <Card plain className="col--half">
-          <div className="feature__detail">
-            <b>Feature two title here!</b><br />
-            More details spilling to next line here.
-          </div>
-        </Card>
-        <Card plain>
-          <IconText
-            icon="cubes"
-            size="2x" className="default feature__category"
-          />
-        </Card>
-      </div>
-    </div>
+    <FeatureList
+      features={features}
+      onClickLikes={likesClick}
+    />
   </div>
 );
 
