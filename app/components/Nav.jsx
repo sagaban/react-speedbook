@@ -12,6 +12,7 @@ const Nav = () => (
     <NavLink to="/workflow">Workflow</NavLink>
     <NavLink to="/buttons">Buttons</NavLink>
     <NavLink to="/ajax">Ajax</NavLink>
+    <NavLink to="/infographics">Infographics</NavLink>
     <NavLink
       href="https://github.com/manavsehgal/react-speed-book"
     >
