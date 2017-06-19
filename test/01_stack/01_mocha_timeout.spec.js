@@ -5,6 +5,7 @@ import { describe, it } from 'mocha';
 describe.skip('Mocha Timeout', function () {
   this.timeout(500);
 
+  // The next two test are showed as pending, but in the book as 'ok/pass'
   it('should take around 300ms', function (done) {
     setTimeout(done, 300);
   });
